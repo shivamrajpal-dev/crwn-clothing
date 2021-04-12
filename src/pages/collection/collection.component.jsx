@@ -8,6 +8,7 @@ const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
     <div className="collection-page">
+      {console.log(collection, "collection")}
       <h2 className="title">{title}</h2>
       <div className="items">
         {items.map((item) => (

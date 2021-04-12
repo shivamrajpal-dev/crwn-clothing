@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import HomePage from "./pages/homepage/homepage.component";
+import HomePage from "./pages/Homepage/Homepage.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import ShopPage from "./pages/shop/shop.component";
 import Header from "./components/header-component/header.component";
@@ -31,9 +31,8 @@ class App extends React.Component {
             ...snapShot.data(),
           });
         });
-      } else {
-        setCurrentUser(userAuth);
       }
+      setCurrentUser(userAuth);
     });
   }
   componentWillUnmount() {
